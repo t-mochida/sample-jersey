@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex04</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<form id="img-form" method="post" enctype="multipart/form-data">
+		<input type="hidden" id="img-size" name="img-size" />
+		<input type="hidden" id="img-type" name="img-type" />
+		<input type="file" id="img-file" name="img-file" />
+	</form>
+	<div>
+	  <img src="img/noimage.png" id="img" style="width:200px;"/>
+	</div>
+  <input type="button" id="img-upload-btn" value="アップロード"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min.js"></script>
+	<script src="js/api.js"></script>
+	<script src="js/ui.js"></script>
+	<script type="text/javascript">
+	$(document).ready( function(){
+		"use strict";
+		initImageUploader();
+	});
+	</script>
+</body>
+</html>
